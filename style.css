@@ -15,10 +15,14 @@ header {
     font-size: 100%;
 }
 
+nav {
+    background-color: ghostwhite;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
+    justify-content: space-between;
 }
 
 aside {
@@ -28,11 +32,12 @@ aside {
 
 section {
     flex: 3;
+    padding: 30px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     min-width: 250px;
     padding-inline-start: 0px;
 }
@@ -46,6 +51,7 @@ li {
 li a {
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 
 .SelfPortrait {
