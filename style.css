@@ -4,15 +4,15 @@
     line-height: 1;
 }
 
+body {
+    margin: 0;
+    flex-wrap: wrap;
+}
+
 header {
     display: flex;
     align-items: center;
     font-size: 100%;
-}
-
-body {
-    margin: 0;
-    flex-wrap: wrap;
 }
 
 main {
@@ -21,22 +21,37 @@ main {
     margin-left: 10%;
 }
 
+aside {
+    flex: 1;
+    padding: 30px;
+}
+
+section {
+    flex: 3;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 250px;
     padding-inline-start: 0px;
-    padding: 10px;
 }
 
 li {
     list-style: none;
     justify-content: space-around;
+    padding: 20px;
 }
 
 li a {
     text-align: center;
     text-decoration: none;
+}
+
+.SelfPortrait {
+    width: 100%;
+    height: auto;
+    align-items: center;
 }
 
 .introName {
