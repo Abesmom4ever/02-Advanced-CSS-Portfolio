@@ -162,34 +162,28 @@ footer {
 
 @media screen and (max-width: 734px) {
     header,
-    main,
-    ul {
+    main {
         flex-direction: column;
     }
 
-    .introName {
-        padding: 10px;
-    }
-
-    header h1 {
-        text-align: center;
-    }
-
-    ul {
-        align-items: center;
-    }
-
-    li {
-        padding: 10px;
-    }
-
     #Logo {
-        width: 60%;
+        width: 25%;
         height: auto;
         padding: 5px;
     }
     .Logos {
         flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .ProjectOne,
+    .ProjectTwoThree,
+    .ProjectFourFive {
+        flex-wrap: nowrap;
+        display: block;
+        width: 100%;
         text-align: center;
     }
 }
