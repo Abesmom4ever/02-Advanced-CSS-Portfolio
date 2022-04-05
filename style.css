@@ -18,24 +18,28 @@ header {
     font-size: 100%;
 }
 
-.About {
-    flex: 1;
-    text-align: center;
-    padding: 25px;
-}
-
 main {
     display: block;
-    flex-wrap: wrap;
-    display: flex;
+    flex-wrap: nowrap;
 }
 
 section {
     padding: 30px;
 }
 
-section h2 {
+a:link,
+a:visited {
+    color: black;
+}
+
+.Header {
     text-align: center;
+}
+
+.About {
+    flex: 1;
+    text-align: center;
+    padding: 25px;
 }
 
 .Description {
@@ -46,17 +50,12 @@ section h2 {
     font-size: 25px;
 }
 
-p a {
+.Description a {
     text-decoration: none;
     background: linear-gradient(to bottom, transparent 50%, lightblue);
 }
 
-a:link,
-a:visited {
-    color: black;
-}
-
-p a:hover {
+.Description a:hover {
     color: black;
     background-color: lightblue;
     transition: 800ms;
@@ -70,12 +69,9 @@ p a:hover {
     border-radius: 10px;
 }
 
-.introName {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px;
-    background: rgb(160, 203, 229);
-    color: #fff;
+#AutoShow {
+    text-align: center;
+    display: block;
 }
 
 .Logos {
@@ -101,29 +97,8 @@ img {
     height: auto;
 }
 
-/* 
-#Architecture,
-#AutoShow,
-#DineLA,
-#Interior,
-#Fashion {
-    height: auto;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} */
-
-#AutoShow {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+footer {
+    background-color: lightblue;
 }
 
 @media screen and (max-width: 734px) {
@@ -156,6 +131,6 @@ img {
     }
     .Logos {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 }
