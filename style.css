@@ -132,6 +132,12 @@ h2 {
     border-radius: 10px;
 }
 
+.Main img:hover {
+    background-color: gray;
+    transition: 300ms;
+    opacity: 50%;
+}
+
 img {
     width: 50%;
     height: auto;
@@ -154,6 +160,10 @@ img {
 #Logo img {
     width: 25%;
     height: auto;
+}
+
+.Logos img:hover {
+    opacity: 50%;
 }
 
 footer {
